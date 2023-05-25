@@ -13,7 +13,7 @@ Open RewardPointsApplication.java file and then right click run as Java applicat
 
 Below steps for different data inputs
 ---------------------------------------
-1) Below endpoint will create sample data in map.
+1) Below endpoint will create initial ingredeint data in map.
 
 http://localhost:8080/initialValues
 
@@ -23,15 +23,15 @@ http://localhost:8080/initialValues
 | ------- | --------------------------------- | -------- | --------------------------- |
 | POST    |  http://localhost:8080/initialValues |          |  {     "Whipped Cream": {         "price": 1,         "quantity": 10     },     "Cream": {         "price": 0.25,         "quantity": 10     },     "Foamed Milk": {         "price": 0.35,         "quantity": 10     },     "Espresso": {         "price": 1.1,         "quantity": 10     },     "Decaf Coffee": {         "price": 0.75,         "quantity": 10     },     "Coffee": {         "price": 0.75,         "quantity": 10     },     "Cocoa": {         "price": 0.9,         "quantity": 10     },     "Sugar": {         "price": 0.25,         "quantity": 10     },     "Steamed Milk": {         "price": 0.35,         "quantity": 10     } }     |
 
-2) Get the customer total earning points and monthly wise total earning points
+2) Get the drink Caffe Mocha details
 
-http://localhost:8080/getRewardPoints?customerName=customer1
+http://localhost:8080/getDrinkDetails/Caffe Mocha
 
-![alt text](https://github.com/Raghuj95/CustomerRewardPoints/blob/main/Showcase/customer1.png)
+![alt text](https://github.com/Gorrepatianvesh/Barista-matic/blob/main/Showcase/CaffeMocha.png)
 
 | Method  | API                                                          | Request  | Response                    |
 | ------- | ------------------------------------------------------------ | -------- | --------------------------- |
-| GET     | http://localhost:8080/getRewardPoints?customerName=customer1 |          |  {"totalPoints":180,"rewards":[{"month":3,"monthPoints":50},{"month":4,"monthPoints":130}]}     |
+| GET     | http://localhost:8080/getDrinkDetails/Caffe Mocha |          |  {     "price": 3.35,     "name": "Caffe Mocha" }     |
 
 3)Get the customer total earning points and monthly wise total earning points
 
