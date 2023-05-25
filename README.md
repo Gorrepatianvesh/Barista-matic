@@ -98,7 +98,7 @@ http://localhost:8080/resetValues
 
 To Run Junits 
 -----------
-Unit Testing  Junit (run com.points.BaristaServiceTest.java class)
+Unit Testing  Junit (run com.barista.BaristaServiceTest.java class)
 
 ![alt text](https://github.com/Gorrepatianvesh/Barista-matic/blob/main/Showcase/junits.png)
 
