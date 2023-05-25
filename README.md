@@ -76,7 +76,7 @@ http://localhost:8080/currentValues
 
 http://localhost:8080/getDrinkDetails/Coffee
 
-![alt text](https://github.com/Gorrepatianvesh/Barista-matic/blob/main/Showcase/NotAvailable.png)
+![alt text](https://github.com/Gorrepatianvesh/Barista-matic/blob/main/Showcase/NotAvailable1.png)
 
 | Method  | API                                                          | Request  | Response                    |
 | ------- | ------------------------------------------------------------ | -------- | --------------------------- |
