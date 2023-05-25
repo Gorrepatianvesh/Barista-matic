@@ -23,6 +23,7 @@ http://localhost:8080/initialValues
 | ------- | --------------------------------- | -------- | --------------------------- |
 | POST    |  http://localhost:8080/initialValues |          |  {     "Whipped Cream": {         "price": 1,         "quantity": 10     },     "Cream": {         "price": 0.25,         "quantity": 10     },     "Foamed Milk": {         "price": 0.35,         "quantity": 10     },     "Espresso": {         "price": 1.1,         "quantity": 10     },     "Decaf Coffee": {         "price": 0.75,         "quantity": 10     },     "Coffee": {         "price": 0.75,         "quantity": 10     },     "Cocoa": {         "price": 0.9,         "quantity": 10     },     "Sugar": {         "price": 0.25,         "quantity": 10     },     "Steamed Milk": {         "price": 0.35,         "quantity": 10     } }     |
 
+
 2) Get the drink Caffe Mocha details
 
 http://localhost:8080/getDrinkDetails/Caffe Mocha
@@ -32,6 +33,7 @@ http://localhost:8080/getDrinkDetails/Caffe Mocha
 | Method  | API                                                          | Request  | Response                    |
 | ------- | ------------------------------------------------------------ | -------- | --------------------------- |
 | GET     | http://localhost:8080/getDrinkDetails/Caffe Mocha |          |  {     "price": 3.35,     "name": "Caffe Mocha" }     |
+
 
 3)Get the drink Coffee details
 
@@ -44,6 +46,7 @@ http://localhost:8080/getDrinkDetails/Coffee
 | GET     | http://localhost:8080/getDrinkDetails/Coffee |          |  {     "price": 2.75,     "name": "Coffee" } |
 
 
+
 4)Get the drink XYZ details
 
 http://localhost:8080/getDrinkDetails/XYZ
@@ -53,6 +56,7 @@ http://localhost:8080/getDrinkDetails/XYZ
 | Method  | API                                                          | Request  | Response                    |
 | ------- | ------------------------------------------------------------ | -------- | --------------------------- |
 | GET     | http://localhost:8080/getDrinkDetails/XYZ |          |  Requested drink is not available|
+
 
 
 5) Below endpoint will get current ingredeint data .
@@ -67,7 +71,20 @@ http://localhost:8080/currentValues
 
 
 
-6) Below endpoint will reset ingredeint data .
+
+6)Click on 5-6 times Coffee drink
+
+http://localhost:8080/getDrinkDetails/Coffee
+
+![alt text](https://github.com/Gorrepatianvesh/Barista-matic/blob/main/Showcase/NotAvailable.png)
+
+| Method  | API                                                          | Request  | Response                    |
+| ------- | ------------------------------------------------------------ | -------- | --------------------------- |
+| GET     | http://localhost:8080/getDrinkDetails/Coffee |          |  Ingredients are not sufficent |
+
+
+
+7) Below endpoint will reset ingredeint data .
 
 http://localhost:8080/resetValues
 
@@ -76,6 +93,7 @@ http://localhost:8080/resetValues
 | Method  | API                               | Request  | Response                    |
 | ------- | --------------------------------- | -------- | --------------------------- |
 | POST    |  http://localhost:8080/resetValues |          |  {     "Whipped Cream": {         "price": 1,         "quantity": 10     },     "Cream": {         "price": 0.25,         "quantity": 10     },     "Foamed Milk": {         "price": 0.35,         "quantity": 10     },     "Espresso": {         "price": 1.1,         "quantity": 10     },     "Decaf Coffee": {         "price": 0.75,         "quantity": 10     },     "Coffee": {         "price": 0.75,         "quantity": 10     },     "Cocoa": {         "price": 0.9,         "quantity": 10     },     "Sugar": {         "price": 0.25,         "quantity": 10     },     "Steamed Milk": {         "price": 0.35,         "quantity": 10     } }     |
+
 
 
 To Run Junits 
