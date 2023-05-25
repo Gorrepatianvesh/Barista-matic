@@ -100,7 +100,7 @@ To Run Junits
 -----------
 Unit Testing  Junit (run com.points.BaristaServiceTest.java class)
 
-![alt text](https://github.com/Gorrepatianvesh/Barista-matic/blob/main/Showcase/Junits.png)
+![alt text](https://github.com/Gorrepatianvesh/Barista-matic/blob/main/Showcase/junits.png)
 
 For Dockerization
 -----------------
