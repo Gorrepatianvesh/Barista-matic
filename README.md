@@ -13,7 +13,7 @@ Open BaristaMaticApplication.java file and then right click run as Java applicat
 
 Below steps for different data inputs
 ---------------------------------------
-1) Below endpoint will create initial ingredeint data in map.
+1) Below endpoint will create initial ingredeint data .
 
 http://localhost:8080/initialValues
 
@@ -43,21 +43,46 @@ http://localhost:8080/getDrinkDetails/Coffee
 | ------- | ------------------------------------------------------------ | -------- | --------------------------- |
 | GET     | http://localhost:8080/getDrinkDetails/Coffee |          |  {     "price": 2.75,     "name": "Coffee" } |
 
-4)Incase of user is not found
 
-http://localhost:8080/getRewardPoints?customerName=customer10
+4)Get the drink XYZ details
 
-![alt text](https://github.com/Raghuj95/CustomerRewardPoints/blob/main/Showcase/nocustomer.png)
+http://localhost:8080/getDrinkDetails/XYZ
+
+![alt text](https://github.com/Gorrepatianvesh/Barista-matic/blob/main/Showcase/Invalid.png)
 
 | Method  | API                                                          | Request  | Response                    |
 | ------- | ------------------------------------------------------------ | -------- | --------------------------- |
-| GET     | http://localhost:8080/getRewardPoints?customerName=customer10 |          |  {"totalPoints":0,"rewards":[]}    |
+| GET     | http://localhost:8080/getDrinkDetails/XYZ |          |  Requested drink is not available|
+
+
+5) Below endpoint will get current ingredeint data .
+
+http://localhost:8080/currentValues
+
+![alt text](https://github.com/Gorrepatianvesh/Barista-matic/blob/main/Showcase/CurrentValues.png)
+
+| Method  | API                               | Request  | Response                    |
+| ------- | --------------------------------- | -------- | --------------------------- |
+| GET    |  http://localhost:8080/currentValues |          |  {     "Whipped Cream": {         "price": 1,         "quantity": 10     },     "Cream": {         "price": 0.25,         "quantity": 10     },     "Foamed Milk": {         "price": 0.35,         "quantity": 10     },     "Espresso": {         "price": 1.1,         "quantity": 10     },     "Decaf Coffee": {         "price": 0.75,         "quantity": 10     },     "Coffee": {         "price": 0.75,         "quantity": 10     },     "Cocoa": {         "price": 0.9,         "quantity": 10     },     "Sugar": {         "price": 0.25,         "quantity": 10     },     "Steamed Milk": {         "price": 0.35,         "quantity": 10     } }   |
+
+
+
+6) Below endpoint will reset ingredeint data .
+
+http://localhost:8080/resetValues
+
+![alt text](https://github.com/Gorrepatianvesh/Barista-matic/blob/main/Showcase/ResetValues.png)
+
+| Method  | API                               | Request  | Response                    |
+| ------- | --------------------------------- | -------- | --------------------------- |
+| POST    |  http://localhost:8080/resetValues |          |  {     "Whipped Cream": {         "price": 1,         "quantity": 10     },     "Cream": {         "price": 0.25,         "quantity": 10     },     "Foamed Milk": {         "price": 0.35,         "quantity": 10     },     "Espresso": {         "price": 1.1,         "quantity": 10     },     "Decaf Coffee": {         "price": 0.75,         "quantity": 10     },     "Coffee": {         "price": 0.75,         "quantity": 10     },     "Cocoa": {         "price": 0.9,         "quantity": 10     },     "Sugar": {         "price": 0.25,         "quantity": 10     },     "Steamed Milk": {         "price": 0.35,         "quantity": 10     } }     |
+
 
 To Run Junits 
 -----------
-Unit Testing  Junit (run com.points.PointsServiceTest.java class)
+Unit Testing  Junit (run com.points.BaristaServiceTest.java class)
 
-![alt text](https://github.com/Raghuj95/CustomerRewardPoints/blob/main/Showcase/Junits.png)
+![alt text](https://github.com/Gorrepatianvesh/Barista-matic/blob/main/Showcase/Junits.png)
 
 For Dockerization
 -----------------
