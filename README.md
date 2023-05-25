@@ -1,4 +1,4 @@
-Technologies - Spring Boot, Maven, H2, Postman
+Technologies - Spring Boot, Maven,Postman
 --------------------------------------------
 Project Setup
 ---------------------
