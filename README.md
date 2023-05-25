@@ -1,4 +1,4 @@
-Technologies - Spring Boot, Maven,Postman
+Technologies - Spring Boot, Java 11, Maven,Postman
 --------------------------------------------
 Project Setup
 ---------------------
@@ -13,15 +13,15 @@ Open RewardPointsApplication.java file and then right click run as Java applicat
 
 Below steps for different data inputs
 ---------------------------------------
-1) Below endpoint will create sample data in H2.
+1) Below endpoint will create sample data in map.
 
-http://localhost:8080/mockupData
+http://localhost:8080/initialValues
 
-![alt text](https://github.com/Raghuj95/CustomerRewardPoints/blob/main/Showcase/mockupdata.png)
+![alt text](https://github.com/Gorrepatianvesh/Barista-matic/blob/main/Showcase/InitialValues.png)
 
 | Method  | API                               | Request  | Response                    |
 | ------- | --------------------------------- | -------- | --------------------------- |
-| POST    |  http://localhost:8080/mockupData |   [{"customerName":"customer1","purchaseAmount":"100","createdDate":"13/03/2023"},{"customerName":"customer1","purchaseAmount":"40","createdDate":"01/04/2023"},{"customerName":"customer1","purchaseAmount":"140","createdDate":"02/04/2023"}]       |  Mockup Data is created     |
+| POST    |  http://localhost:8080/initialValues |          |  {     "Whipped Cream": {         "price": 1,         "quantity": 10     },     "Cream": {         "price": 0.25,         "quantity": 10     },     "Foamed Milk": {         "price": 0.35,         "quantity": 10     },     "Espresso": {         "price": 1.1,         "quantity": 10     },     "Decaf Coffee": {         "price": 0.75,         "quantity": 10     },     "Coffee": {         "price": 0.75,         "quantity": 10     },     "Cocoa": {         "price": 0.9,         "quantity": 10     },     "Sugar": {         "price": 0.25,         "quantity": 10     },     "Steamed Milk": {         "price": 0.35,         "quantity": 10     } }     |
 
 2) Get the customer total earning points and monthly wise total earning points
 
