@@ -8,7 +8,7 @@ Open project in IDE
 
 Do Maven clean install
 
-Open RewardPointsApplication.java file and then right click run as Java application
+Open BaristaMaticApplication.java file and then right click run as Java application
 
 
 Below steps for different data inputs
@@ -33,15 +33,15 @@ http://localhost:8080/getDrinkDetails/Caffe Mocha
 | ------- | ------------------------------------------------------------ | -------- | --------------------------- |
 | GET     | http://localhost:8080/getDrinkDetails/Caffe Mocha |          |  {     "price": 3.35,     "name": "Caffe Mocha" }     |
 
-3)Get the customer total earning points and monthly wise total earning points
+3)Get the drink Coffee details
 
-http://localhost:8080/getRewardPoints?customerName=customer2
+http://localhost:8080/getDrinkDetails/Coffee
 
-![alt text](https://github.com/Raghuj95/CustomerRewardPoints/blob/main/Showcase/customer2.png)
+![alt text](https://github.com/Gorrepatianvesh/Barista-matic/blob/main/Showcase/Coffee.png)
 
 | Method  | API                                                          | Request  | Response                    |
 | ------- | ------------------------------------------------------------ | -------- | --------------------------- |
-| GET     | http://localhost:8080/getRewardPoints?customerName=customer2 |          |  {"totalPoints":200,"rewards":[{"month":3,"monthPoints":90},{"month":4,"monthPoints":110}]}    |
+| GET     | http://localhost:8080/getDrinkDetails/Coffee |          |  {     "price": 2.75,     "name": "Coffee" } |
 
 4)Incase of user is not found
 
